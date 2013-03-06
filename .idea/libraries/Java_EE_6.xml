@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Java EE 6">
+    <CLASSES>
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/annotations-api.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/catalina-ant.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/catalina-ha.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/catalina-tribes.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/catalina.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/ecj-4.2.1.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/el-api.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/jasper-el.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/jasper.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/jsp-api.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/servlet-api.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-api.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-coyote.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-dbcp.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-i18n-es.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-i18n-fr.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-i18n-ja.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-jdbc.jar!/" />
+      <root url="jar://E:/Programs/apache-tomcat-7.0.34_x64/lib/tomcat-util.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

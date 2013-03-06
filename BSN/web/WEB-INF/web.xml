@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <description>
+      Business Social Network (BSN)
+    </description>
+    <display-name>BSN</display-name>
+
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>servlets.Registration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>servlets.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>Send</servlet-name>
+        <servlet-class>servlets.Send</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Send</servlet-name>
+        <url-pattern>/Send</url-pattern>
+    </servlet-mapping>
+</web-app>

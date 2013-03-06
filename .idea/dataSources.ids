@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="HSQL Database Engine" version="2.2.9" jdbc-version="4.0" driver-version="2.2.9" uuid="85b483d0-a1f7-4f58-b427-dd328507cda0">
+    <identifier-quote-string>"</identifier-quote-string>
+    <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
+    <jdbc-url>jdbc:hsqldb:file:C:\Users\Dis\IdeaProjects\WebDevelop\DB_basics\db\testDb</jdbc-url>
+    <user-name>Login</user-name>
+    <user-password>dffadfcbdfd9dfd9</user-password>
+    <schema-pattern>PUBLIC.PUBLIC</schema-pattern>
+    <default-schemas>PUBLIC.PUBLIC</default-schemas>
+    <libraries>
+      <library>
+        <url>jar://E:/Programs/_LIBS/hsqldb-2.2.9/hsqldb/lib/hsqldb.jar!/</url>
+      </library>
+    </libraries>
+    <table name="BSN_IM" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="64" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="SENDER" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="WHOM" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="MES" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10072" columns="id" />
+      <index name="SYS_IDX_SYS_PK_10072_10073" unique="true" columns="ID" />
+    </table>
+    <table name="BSN_USERS" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="UID" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="PASS" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="AGE" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10069" columns="uid" />
+      <index name="SYS_IDX_SYS_PK_10069_10070" unique="true" columns="UID" />
+    </table>
+    <table name="LS_COMMON" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="64" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="PAGE" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="TEXT" sqlType="VARCHAR" length="16777216" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10076" columns="id" />
+      <index name="SYS_IDX_SYS_PK_10076_10077" unique="true" columns="ID" />
+    </table>
+    <table name="LS_COMPANIES" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="64" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="NAME" sqlType="VARCHAR" length="30" precision="0" nullable="true" jdbcType="12" />
+      <column name="INFO" sqlType="VARCHAR" length="16777216" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10084" columns="id" />
+      <index name="SYS_IDX_SYS_PK_10084_10085" unique="true" columns="ID" />
+    </table>
+    <table name="LS_TAGS" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="64" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="TAG" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10080" columns="id" />
+      <index name="SYS_IDX_SYS_PK_10080_10081" unique="true" columns="ID" />
+    </table>
+    <table name="LS_TAGS_ASSOC" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="ID" sqlType="BIGINT" length="64" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="ID_COMPANY" sqlType="BIGINT" length="64" precision="0" nullable="true" jdbcType="-5" />
+      <column name="ID_TAG" sqlType="BIGINT" length="64" precision="0" nullable="true" jdbcType="-5" />
+      <primary-key name="SYS_PK_10088" columns="id" />
+      <foreign-key name="SYS_FK_10089" columns="ID_COMPANY" ref-table="LS_COMPANIES" ref-schema="PUBLIC" ref-catalog="PUBLIC" ref-columns="ID" />
+      <foreign-key name="SYS_FK_10090" columns="ID_TAG" ref-table="LS_TAGS" ref-schema="PUBLIC" ref-catalog="PUBLIC" ref-columns="ID" />
+      <index name="SYS_IDX_SYS_PK_10088_10091" unique="true" columns="ID" />
+      <index name="SYS_IDX_10093" unique="false" columns="ID_COMPANY" />
+      <index name="SYS_IDX_10095" unique="false" columns="ID_TAG" />
+    </table>
+    <table name="USERPROFILE" schema="PUBLIC" catalog="PUBLIC" type="TABLE">
+      <column name="USERID" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12" />
+      <column name="FIRSTNAME" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="SURNAME" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ADDRESS1" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ADDRESS2" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="TOWN" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="COUNTRY" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="ZIPCODE" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="SYS_PK_10066" columns="userid" />
+      <index name="SYS_IDX_SYS_PK_10066_10067" unique="true" columns="USERID" />
+    </table>
+  </data-source>
+</component>
